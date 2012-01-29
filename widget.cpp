@@ -16,6 +16,8 @@ Widget::~Widget()
 
 void Widget::on_pushButton_send_clicked()
 {
+    Message m(username, ui->lineEdit->text());
+    historique << m;
     ui->textEdit->setText(ui->textEdit->toPlainText().append(ui->lineEdit->text()));
     ui->lineEdit->clear();
 }
@@ -26,6 +28,4 @@ void Widget::on_pushButton_Connect_clicked()
         username = ui->lineEdit_Username->text();
         ui->stackedWidget->setCurrentIndex(0);
     }
-
-    //Test git : push avec Qt creator
 }

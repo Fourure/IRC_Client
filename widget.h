@@ -2,6 +2,8 @@
 #define WIDGET_H
 
 #include <QWidget>
+#include <QList>
+#include "message.h"
 
 namespace Ui {
 class Widget;
@@ -23,6 +25,7 @@ private slots:
 private:
     Ui::Widget *ui;
     QString username;
+    QList<Message> historique;
 };
 
 #endif // WIDGET_H
