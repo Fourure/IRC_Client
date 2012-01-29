@@ -6,6 +6,7 @@ Widget::Widget(QWidget *parent) :
     ui(new Ui::Widget)
 {
     ui->setupUi(this);
+    ui->stackedWidget->setCurrentIndex(1);
 }
 
 Widget::~Widget()

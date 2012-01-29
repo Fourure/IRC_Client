@@ -6,14 +6,17 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>304</width>
+    <height>284</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>My_Msn</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="sizeConstraint">
+    <enum>QLayout::SetFixedSize</enum>
+   </property>
    <item>
     <widget class="QStackedWidget" name="stackedWidget">
      <property name="currentIndex">
@@ -47,7 +50,6 @@
        </item>
       </layout>
       <zorder>textEdit</zorder>
-      <zorder>lineEdit</zorder>
       <zorder></zorder>
      </widget>
      <widget class="QWidget" name="page_2">
