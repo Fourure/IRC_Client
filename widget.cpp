@@ -25,4 +25,6 @@ void Widget::on_pushButton_Connect_clicked()
         username = ui->lineEdit_Username->text();
         ui->stackedWidget->setCurrentIndex(0);
     }
+
+    //Test git : push avec Qt creator
 }
