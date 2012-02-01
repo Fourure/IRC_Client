@@ -3,6 +3,8 @@
 
 #include <QWidget>
 #include <QList>
+#include <QTcpSocket>
+#include <QMessageBox>
 #include "message.h"
 
 namespace Ui {
@@ -19,13 +21,19 @@ public:
     
 private slots:
     void on_pushButton_send_clicked();
-
     void on_pushButton_Connect_clicked();
+
+    void readFortune();
+    void displayError(QAbstractSocket::SocketError socketError);
 
 private:
     Ui::Widget *ui;
     QString username;
     QList<Message> historique;
+
+    QTcpSocket *tcpSocket;
+    QString currentFortune;
+    quint16 blockSize;
 };
 
 #endif // WIDGET_H
