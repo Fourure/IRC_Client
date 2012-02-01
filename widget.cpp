@@ -18,7 +18,9 @@ void Widget::on_pushButton_send_clicked()
 {
     Message m(username, ui->lineEdit->text());
     historique << m;
-    ui->textEdit->setText(ui->textEdit->toPlainText().append(ui->lineEdit->text()));
+    //ui->textEdit->setText(m.toString().append("\n"));
+    ui->textEdit->append(m.toString());
+    //ui->textEdit->setText(ui->textEdit->toPlainText().append(ui->lineEdit->text()).append("\n"));
     ui->lineEdit->clear();
 }
 
