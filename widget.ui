@@ -11,21 +11,18 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>My_Msn</string>
+   <string>IRC</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <widget class="QStackedWidget" name="stackedWidget">
      <property name="currentIndex">
-      <number>1</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="page">
       <layout class="QVBoxLayout" name="verticalLayout_2">
        <item>
         <widget class="QTextEdit" name="textEdit">
-         <property name="enabled">
-          <bool>true</bool>
-         </property>
          <property name="readOnly">
           <bool>true</bool>
          </property>
@@ -39,15 +36,13 @@
          <item>
           <widget class="QPushButton" name="pushButton_send">
            <property name="text">
-            <string>Envoyer</string>
+            <string>Send</string>
            </property>
           </widget>
          </item>
         </layout>
        </item>
       </layout>
-      <zorder>textEdit</zorder>
-      <zorder></zorder>
      </widget>
      <widget class="QWidget" name="page_2">
       <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -56,7 +51,7 @@
          <item>
           <widget class="QLabel" name="label_Username">
            <property name="text">
-            <string>User Name :</string>
+            <string>Username:</string>
            </property>
           </widget>
          </item>
@@ -68,7 +63,7 @@
        <item>
         <widget class="QPushButton" name="pushButton_Connect">
          <property name="text">
-          <string>Connection</string>
+          <string>Connect</string>
          </property>
         </widget>
        </item>
@@ -95,34 +90,34 @@
  <resources/>
  <connections>
   <connection>
-   <sender>lineEdit</sender>
-   <signal>returnPressed()</signal>
-   <receiver>pushButton_send</receiver>
-   <slot>click()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>233</x>
-     <y>264</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>310</x>
-     <y>265</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
    <sender>lineEdit_Username</sender>
    <signal>returnPressed()</signal>
    <receiver>pushButton_Connect</receiver>
    <slot>click()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>206</x>
-     <y>136</y>
+     <x>192</x>
+     <y>35</y>
     </hint>
     <hint type="destinationlabel">
-     <x>212</x>
-     <y>267</y>
+     <x>192</x>
+     <y>71</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit</sender>
+   <signal>returnPressed()</signal>
+   <receiver>pushButton_send</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>76</x>
+     <y>240</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>217</x>
+     <y>244</y>
     </hint>
    </hints>
   </connection>

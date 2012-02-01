@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui network
 
 TARGET = Client
 TEMPLATE = app
@@ -17,4 +17,5 @@ SOURCES += main.cpp\
 HEADERS  += widget.h \
     message.h
 
-FORMS    += widget.ui
+FORMS    += \
+    widget.ui
